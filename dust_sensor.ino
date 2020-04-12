@@ -1,4 +1,4 @@
-//version 0.1a
+//version 0.1b
 int dustPin = 0; // dust sensor - Arduino A0 pin
 int ledPin = 2;
  
