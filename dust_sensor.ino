@@ -122,7 +122,7 @@ void loop() {
   digitalWrite(sharpLEDPin, LOW);
 
   // Wait 0.28ms before taking a reading of the output voltage as per spec.
-  delayMicroseconds(300);
+  delayMicroseconds(280);
 
   // Record the output voltage. This operation takes around 100 microseconds.
   int VoRaw = analogRead(sharpVoPin);
@@ -131,7 +131,7 @@ void loop() {
   digitalWrite(sharpLEDPin, HIGH);
 
   // Wait for remainder of the 10ms cycle = 10000 - 280 - 100 microseconds.
-  delayMicroseconds(9600);
+  delayMicroseconds(9620);
   
   // Print raw voltage value (number from 0 to 1023).
   #ifdef PRINT_RAW_DATA
